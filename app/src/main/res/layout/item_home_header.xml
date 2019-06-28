@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+                name="viewModel"
+                type="com.ballboycorp.anappaday.shop.main.home.header.model.HeaderItemViewModel"/>
+    </data>
+
+    <LinearLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="550dp">
+        
+        <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="400dp"
+                android:layout_marginEnd="30dp"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="0dp">
+            <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop"
+                    app:uri="@{viewModel.item.thumbnail}"/>
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="20dp"
+                android:textSize="30sp"
+                android:textColor="@color/colorBlack"
+                android:textStyle="bold"
+                android:lines="1"
+                android:ellipsize="end"
+                android:text="@{viewModel.item.title}"
+                tools:text="Gondola Sideboard"/>
+
+
+        <TextView
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_marginTop="10dp"
+                android:textSize="16sp"
+                android:textColor="@color/colorBlackLight"
+                android:ellipsize="end"
+                android:text="@{viewModel.item.content}"
+                tools:text="Gondola Sideboard Gondola Sideboard Gondola Sideboard Gondola Sideboard Gondola Sideboard Gondola Sideboard Gondola Sideboard Gondola Sideboard Gondola Sideboard Gondola Gondola Sideboard Gondola Sideboard Gondola Gondola Sideboard Gondola Sideboard Gondola Gondola Sideboard Gondola Sideboard Gondola Gondola Sideboard Gondola Sideboard Gondola Gondola Sideboard Gondola Sideboard Gondola Gondola Sideboard Gondola Sideboard Gondola Gondola Sideboard Gondola Sideboard Gondola "/>
+
+
+    </LinearLayout>
+</layout>
